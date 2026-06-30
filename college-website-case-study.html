@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="College Website Redesign UI/UX Case Study by Naveen S" />
+    <title>College Website Case Study | Naveen S</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .case-study-container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 2rem 1.25rem;
+      }
+
+      .case-study-header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+        margin-bottom: 2rem;
+        padding-bottom: 1.5rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+      }
+
+      .case-study-header h1 {
+        grid-column: 1 / -1;
+      }
+
+      .case-study-meta {
+        display: grid;
+        gap: 0.6rem;
+      }
+
+      .case-study-meta strong {
+        color: var(--text);
+      }
+
+      .case-study-meta p {
+        margin: 0;
+        color: var(--muted);
+      }
+
+      .case-study-section {
+        margin-bottom: 2rem;
+        padding-bottom: 1.5rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+      }
+
+      .case-study-section:last-child {
+        border-bottom: none;
+      }
+
+      .case-study-section h2 {
+        margin-top: 0;
+      }
+
+      .case-study-section ul {
+        padding-left: 1.2rem;
+      }
+
+      .case-study-section li {
+        margin-bottom: 0.6rem;
+        color: var(--muted);
+        line-height: 1.7;
+      }
+
+      .flow-chart {
+        background: rgba(255, 255, 255, 0.18);
+        padding: 1rem;
+        border-radius: 16px;
+        margin: 1rem 0;
+        font-weight: 600;
+        text-align: center;
+        color: var(--text);
+        border: 1px solid rgba(255, 255, 255, 0.4);
+      }
+
+      .color-palette {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 1rem;
+        margin: 1rem 0;
+      }
+
+      .color-swatch {
+        border-radius: 12px;
+        padding: 1rem;
+        text-align: center;
+        border: 1px solid rgba(255, 255, 255, 0.4);
+      }
+
+      .color-blue {
+        background: #2563eb;
+        color: white;
+      }
+
+      .color-white {
+        background: white;
+        color: var(--text);
+      }
+
+      .color-gold {
+        background: #fbbf24;
+        color: var(--text);
+      }
+
+      .color-gray {
+        background: #f8fafc;
+        color: var(--text);
+      }
+
+      .feature-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        margin: 1rem 0;
+      }
+
+      .feature-card {
+        background: rgba(255, 255, 255, 0.18);
+        padding: 1rem;
+        border-radius: 12px;
+        border: 1px solid rgba(255, 255, 255, 0.4);
+      }
+
+      .feature-card h4 {
+        margin-top: 0;
+        color: var(--text);
+      }
+
+      .feature-card ul {
+        padding-left: 1rem;
+        margin: 0;
+      }
+
+      .feature-card li {
+        margin-bottom: 0.4rem;
+      }
+
+      .case-study-nav {
+        display: flex;
+        gap: 1rem;
+        margin-top: 2rem;
+        flex-wrap: wrap;
+      }
+
+      @media (max-width: 720px) {
+        .case-study-header {
+          grid-template-columns: 1fr;
+        }
+
+        .color-palette {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .feature-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page-loader" id="pageLoader">
+      <div class="loader-ring"></div>
+      <p>Loading case study</p>
+    </div>
+
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <main id="main" class="case-study-container">
+      <div class="case-study-header reveal">
+        <h1>College Website Redesign</h1>
+        <div class="case-study-meta">
+          <p><strong>Role:</strong> UI/UX Designer</p>
+          <p><strong>Duration:</strong> 2 Weeks</p>
+        </div>
+        <div class="case-study-meta">
+          <p><strong>Tools:</strong> Figma, FigJam</p>
+          <p><strong>Platform:</strong> Responsive Website</p>
+        </div>
+      </div>
+
+      <section class="case-study-section reveal">
+        <h2>Problem Statement</h2>
+        <p>
+          Many college websites present outdated layouts, inconsistent navigation, and scattered information, making it difficult for students, parents, and faculty to quickly access important details such as admissions, courses, events, and announcements.
+        </p>
+        <p>
+          The goal was to redesign the college website with a modern, responsive, and user-friendly interface that improves accessibility and information discovery.
+        </p>
+      </section>
+
+      <section class="case-study-section reveal">
+        <h2>Project Goal</h2>
+        <p>Design a responsive college website that enables users to:</p>
+        <ul>
+          <li>Access academic information quickly</li>
+          <li>Explore courses and departments</li>
+          <li>View campus news and events</li>
+          <li>Find admission details</li>
+          <li>Contact faculty and departments easily</li>
+        </ul>
+      </section>
+
+      <section class="case-study-section reveal">
+        <h2>Target Users</h2>
+        <h3>Primary Users</h3>
+        <ul>
+          <li>Prospective students</li>
+          <li>Current students</li>
+          <li>Parents</li>
+        </ul>
+        <h3>Secondary Users</h3>
+        <ul>
+          <li>Faculty</li>
+          <li>Administrative staff</li>
+          <li>Alumni</li>
+        </ul>
+      </section>
+
+      <section class="case-study-section reveal">
+        <h2>User Research</h2>
+        <p>Research involved reviewing educational websites and collecting feedback from students regarding common navigation challenges.</p>
+        <h3>Key Findings</h3>
+        <ul>
+          <li>Important information was difficult to locate</li>
+          <li>Navigation menus were overcrowded</li>
+          <li>Mobile responsiveness was poor</li>
+          <li>Admission details lacked clarity</li>
+          <li>Event announcements were hard to find</li>
+        </ul>
+      </section>
+
+      <section class="case-study-section reveal">
+        <h2>User Persona</h2>
+        <h3>Priya – Higher Secondary Student</h3>
+        <p><strong>Age:</strong> 18</p>
+        <h4>Goal</h4>
+        <p>Find admission information and course details quickly.</p>
+        <h4>Pain Points</h4>
+        <ul>
+          <li>Confusing navigation</li>
+          <li>Too many pages</li>
+          <li>Poor mobile experience</li>
+        </ul>
+      </section>
+
+      <section class="case-study-section reveal">
+        <h2>Design Process</h2>
+        <ol style="padding-left: 1.2rem; color: var(--muted); line-height: 1.8;">
+          <li>User Research</li>
+          <li>Competitor Analysis</li>
+          <li>Information Architecture</li>
+          <li>User Flow</li>
+          <li>Wireframing</li>
+          <li>High-Fidelity UI Design</li>
+          <li>Prototype Testing</li>
+        </ol>
+      </section>
+
+      <section class="case-study-section reveal">
+        <h2>Information Architecture</h2>
+        <div class="flow-chart">Home</div>
+        <div class="flow-chart">↓ About</div>
+        <div class="flow-chart">↓ Admissions</div>
+        <div class="flow-chart">↓ Courses</div>
+        <div class="flow-chart">↓ Departments</div>
+        <div class="flow-chart">↓ Campus Life</div>
+        <div class="flow-chart">↓ Events</div>
+        <div class="flow-chart">↓ Contact</div>
+      </section>
+
+      <section class="case-study-section reveal">
+        <h2>User Flow</h2>
+        <div class="flow-chart">Visit Homepage</div>
+        <div class="flow-chart">↓ Browse Courses</div>
+        <div class="flow-chart">↓ View Admission Details</div>
+        <div class="flow-chart">↓ Submit Inquiry</div>
+        <div class="flow-chart">↓ Receive Information</div>
+      </section>
+
+      <section class="case-study-section reveal">
+        <h2>Wireframes</h2>
+        <p>Focused on:</p>
+        <ul>
+          <li>Simple navigation</li>
+          <li>Clear content hierarchy</li>
+          <li>Responsive layouts</li>
+          <li>Accessible design</li>
+          <li>Fast information discovery</li>
+        </ul>
+      </section>
+
+      <section class="case-study-section reveal">
+        <h2>Visual Design</h2>
+        <h3>Color Palette</h3>
+        <div class="color-palette">
+          <div class="color-swatch color-blue">
+            <strong>Primary</strong><br />
+            #2563EB
+          </div>
+          <div class="color-swatch color-white">
+            <strong>Secondary</strong><br />
+            #FFFFFF
+          </div>
+          <div class="color-swatch color-gold">
+            <strong>Accent</strong><br />
+            #FBBF24
+          </div>
+          <div class="color-swatch color-gray">
+            <strong>Background</strong><br />
+            #F8FAFC
+          </div>
+        </div>
+        <h3>Typography</h3>
+        <p><strong>Headings:</strong> Poppins</p>
+        <p><strong>Body:</strong> Inter</p>
+      </section>
+
+      <section class="case-study-section reveal">
+        <h2>Key Features</h2>
+        <div class="feature-grid">
+          <div class="feature-card">
+            <h4>Homepage</h4>
+            <ul>
+              <li>Hero banner</li>
+              <li>College overview</li>
+              <li>Quick links</li>
+              <li>Latest announcements</li>
+            </ul>
+          </div>
+          <div class="feature-card">
+            <h4>Admissions</h4>
+            <ul>
+              <li>Eligibility criteria</li>
+              <li>Application process</li>
+              <li>Important dates</li>
+              <li>Downloadable forms</li>
+            </ul>
+          </div>
+          <div class="feature-card">
+            <h4>Courses</h4>
+            <ul>
+              <li>Department listings</li>
+              <li>Program details</li>
+              <li>Faculty information</li>
+            </ul>
+          </div>
+          <div class="feature-card">
+            <h4>Campus Life</h4>
+            <ul>
+              <li>Clubs</li>
+              <li>Facilities</li>
+              <li>Gallery</li>
+              <li>Student achievements</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-study-section reveal">
+        <h2>Design Decisions</h2>
+        <ul>
+          <li>Simplified the navigation bar for quicker access</li>
+          <li>Organized content using clear visual hierarchy</li>
+          <li>Designed mobile-first responsive layouts</li>
+          <li>Used reusable UI components for consistency</li>
+        </ul>
+      </section>
+
+      <section class="case-study-section reveal">
+        <h2>Challenges</h2>
+        <ul>
+          <li>Structuring a large amount of academic information</li>
+          <li>Balancing visual appeal with readability</li>
+          <li>Ensuring responsiveness across different screen sizes</li>
+        </ul>
+      </section>
+
+      <section class="case-study-section reveal">
+        <h2>Outcome</h2>
+        <p>
+          The redesigned website provides a modern, accessible, and user-friendly experience that makes it easier for students, parents, and faculty to find information. Improved navigation and responsive layouts enhance usability across desktop and mobile devices.
+        </p>
+      </section>
+
+      <section class="case-study-section reveal">
+        <h2>Key Learnings</h2>
+        <ul>
+          <li>Strong information architecture improves discoverability</li>
+          <li>Responsive design is essential for educational platforms</li>
+          <li>Clear typography and spacing enhance readability</li>
+          <li>User-centered design creates a more engaging digital experience</li>
+        </ul>
+      </section>
+
+      <div class="case-study-nav reveal">
+        <a class="btn btn-primary" href="index.html#projects">Back to Projects</a>
+        <a class="btn btn-secondary" href="index.html">Home</a>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

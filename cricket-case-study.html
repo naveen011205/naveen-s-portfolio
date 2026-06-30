@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="CricScore – Cricket Scoring App UI/UX Case Study by Naveen S" />
+    <title>CricScore Case Study | Naveen S</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .case-study-container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 2rem 1.25rem;
+      }
+
+      .case-study-header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+        margin-bottom: 2rem;
+        padding-bottom: 1.5rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+      }
+
+      .case-study-header h1 {
+        grid-column: 1 / -1;
+      }
+
+      .case-study-meta {
+        display: grid;
+        gap: 0.6rem;
+      }
+
+      .case-study-meta strong {
+        color: var(--text);
+      }
+
+      .case-study-meta p {
+        margin: 0;
+        color: var(--muted);
+      }
+
+      .case-study-section {
+        margin-bottom: 2rem;
+        padding-bottom: 1.5rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+      }
+
+      .case-study-section:last-child {
+        border-bottom: none;
+      }
+
+      .case-study-section h2 {
+        margin-top: 0;
+      }
+
+      .case-study-section ul {
+        padding-left: 1.2rem;
+      }
+
+      .case-study-section li {
+        margin-bottom: 0.6rem;
+        color: var(--muted);
+        line-height: 1.7;
+      }
+
+      .flow-chart {
+        background: rgba(255, 255, 255, 0.18);
+        padding: 1rem;
+        border-radius: 16px;
+        margin: 1rem 0;
+        font-weight: 600;
+        text-align: center;
+        color: var(--text);
+        border: 1px solid rgba(255, 255, 255, 0.4);
+      }
+
+      .flow-chart + .flow-chart::before {
+        content: "↓";
+        display: block;
+        margin-bottom: 0.5rem;
+      }
+
+      .color-palette {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 1rem;
+        margin: 1rem 0;
+      }
+
+      .color-swatch {
+        border-radius: 12px;
+        padding: 1rem;
+        text-align: center;
+        border: 1px solid rgba(255, 255, 255, 0.4);
+      }
+
+      .color-blue {
+        background: #2563eb;
+        color: white;
+      }
+
+      .color-white {
+        background: white;
+        color: var(--text);
+      }
+
+      .color-green {
+        background: #22c55e;
+        color: white;
+      }
+
+      .color-red {
+        background: #ef4444;
+        color: white;
+      }
+
+      .feature-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        margin: 1rem 0;
+      }
+
+      .feature-card {
+        background: rgba(255, 255, 255, 0.18);
+        padding: 1rem;
+        border-radius: 12px;
+        border: 1px solid rgba(255, 255, 255, 0.4);
+      }
+
+      .feature-card h4 {
+        margin-top: 0;
+        color: var(--text);
+      }
+
+      .feature-card ul {
+        padding-left: 1rem;
+        margin: 0;
+      }
+
+      .feature-card li {
+        margin-bottom: 0.4rem;
+      }
+
+      .case-study-nav {
+        display: flex;
+        gap: 1rem;
+        margin-top: 2rem;
+        flex-wrap: wrap;
+      }
+
+      @media (max-width: 720px) {
+        .case-study-header {
+          grid-template-columns: 1fr;
+        }
+
+        .color-palette {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .feature-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page-loader" id="pageLoader">
+      <div class="loader-ring"></div>
+      <p>Loading case study</p>
+    </div>
+
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <main id="main" class="case-study-container">
+      <div class="case-study-header reveal">
+        <h1>CricScore – Cricket Scoring App</h1>
+        <div class="case-study-meta">
+          <p><strong>Role:</strong> UI/UX Designer</p>
+          <p><strong>Duration:</strong> 2 Weeks</p>
+        </div>
+        <div class="case-study-meta">
+          <p><strong>Tools:</strong> Figma, FigJam</p>
+          <p><strong>Platform:</strong> Mobile & Web</p>
+        </div>
+      </div>
+
+      <section class="case-study-section reveal">
+        <h2>Problem Statement</h2>
+        <p>
+          Cricket fans, players, and local tournament organizers often rely on multiple apps or manual scorekeeping to follow matches. Many existing scoring apps are cluttered with complex interfaces, making it difficult to quickly update scores or view important match information.
+        </p>
+        <p>
+          The goal was to design a clean, fast, and intuitive cricket scoring application that allows users to score matches effortlessly while giving spectators easy access to live scores, player statistics, and match insights.
+        </p>
+      </section>
+
+      <section class="case-study-section reveal">
+        <h2>Project Goal</h2>
+        <p>Design a user-friendly cricket scoring application that enables users to:</p>
+        <ul>
+          <li>Create and manage cricket matches</li>
+          <li>Record ball-by-ball scores quickly</li>
+          <li>View live score updates</li>
+          <li>Track player and team statistics</li>
+          <li>Access match history</li>
+          <li>Deliver a responsive experience across mobile and web</li>
+        </ul>
+      </section>
+
+      <section class="case-study-section reveal">
+        <h2>Target Users</h2>
+        <h3>Primary Users</h3>
+        <ul>
+          <li>Local cricket scorers</li>
+          <li>Tournament organizers</li>
+          <li>Team captains</li>
+        </ul>
+        <h3>Secondary Users</h3>
+        <ul>
+          <li>Cricket fans</li>
+          <li>Coaches</li>
+          <li>Players</li>
+          <li>Friends and family following live matches</li>
+        </ul>
+      </section>
+
+      <section class="case-study-section reveal">
+        <h2>User Research</h2>
+        <p>Research included reviewing existing cricket scoring applications and identifying common usability issues.</p>
+        <h3>Key Findings</h3>
+        <ul>
+          <li>Navigation was often confusing</li>
+          <li>Important information was hidden behind multiple screens</li>
+          <li>Ball-by-ball scoring required too many taps</li>
+          <li>Live score updates were difficult to read</li>
+          <li>Statistics pages were overcrowded</li>
+          <li>New users found onboarding difficult</li>
+        </ul>
+      </section>
+
+      <section class="case-study-section reveal">
+        <h2>User Persona</h2>
+        <h3>Rahul – Local Tournament Scorer</h3>
+        <p><strong>Age:</strong> 24</p>
+        <p><strong>Occupation:</strong> College Student</p>
+        <h4>Goals</h4>
+        <ul>
+          <li>Score matches quickly</li>
+          <li>Reduce mistakes during scoring</li>
+          <li>Share live scores with friends</li>
+        </ul>
+        <h4>Pain Points</h4>
+        <ul>
+          <li>Complex navigation</li>
+          <li>Slow score entry</li>
+          <li>Too many unnecessary features</li>
+        </ul>
+      </section>
+
+      <section class="case-study-section reveal">
+        <h2>Design Process</h2>
+        <ol style="padding-left: 1.2rem; color: var(--muted); line-height: 1.8;">
+          <li>User Research</li>
+          <li>Competitor Analysis</li>
+          <li>User Flow</li>
+          <li>Wireframing</li>
+          <li>High-Fidelity UI Design</li>
+          <li>Interactive Prototype</li>
+          <li>Design Refinements</li>
+        </ol>
+      </section>
+
+      <section class="case-study-section reveal">
+        <h2>Information Architecture</h2>
+        <div class="flow-chart">Home</div>
+        <div class="flow-chart">↓ Create Match</div>
+        <div class="flow-chart">↓ Select Teams</div>
+        <div class="flow-chart">↓ Playing XI</div>
+        <div class="flow-chart">↓ Match Setup</div>
+        <div class="flow-chart">↓ Live Scoring</div>
+        <div class="flow-chart">↓ Scorecard</div>
+        <div class="flow-chart">↓ Statistics</div>
+        <div class="flow-chart">↓ Match Summary</div>
+      </section>
+
+      <section class="case-study-section reveal">
+        <h2>User Flow</h2>
+        <div class="flow-chart">Splash Screen</div>
+        <div class="flow-chart">↓ Login / Sign Up</div>
+        <div class="flow-chart">↓ Home Dashboard</div>
+        <div class="flow-chart">↓ Create New Match</div>
+        <div class="flow-chart">↓ Select Teams</div>
+        <div class="flow-chart">↓ Choose Playing XI</div>
+        <div class="flow-chart">↓ Match Toss</div>
+        <div class="flow-chart">↓ Start Match</div>
+        <div class="flow-chart">↓ Live Scoring</div>
+        <div class="flow-chart">↓ Player Statistics</div>
+        <div class="flow-chart">↓ Scorecard</div>
+        <div class="flow-chart">↓ Match Summary</div>
+        <div class="flow-chart">↓ Share Match</div>
+      </section>
+
+      <section class="case-study-section reveal">
+        <h2>Wireframes</h2>
+        <p>Low-fidelity wireframes focused on:</p>
+        <ul>
+          <li>Simple navigation</li>
+          <li>Large scoring buttons</li>
+          <li>Clear scoreboard hierarchy</li>
+          <li>Quick access to player statistics</li>
+          <li>Minimal distractions</li>
+        </ul>
+      </section>
+
+      <section class="case-study-section reveal">
+        <h2>Visual Design</h2>
+        <h3>Color Palette</h3>
+        <div class="color-palette">
+          <div class="color-swatch color-blue">
+            <strong>Primary</strong><br />
+            #2563EB
+          </div>
+          <div class="color-swatch color-white">
+            <strong>Secondary</strong><br />
+            #FFFFFF
+          </div>
+          <div class="color-swatch color-green">
+            <strong>Accent</strong><br />
+            #22C55E
+          </div>
+          <div class="color-swatch color-red">
+            <strong>Error</strong><br />
+            #EF4444
+          </div>
+        </div>
+        <h3>Typography</h3>
+        <p><strong>Headings:</strong> Poppins Bold</p>
+        <p><strong>Body:</strong> Inter Regular</p>
+      </section>
+
+      <section class="case-study-section reveal">
+        <h2>Key Features</h2>
+        <div class="feature-grid">
+          <div class="feature-card">
+            <h4>Live Score Dashboard</h4>
+            <ul>
+              <li>Real-time score updates</li>
+              <li>Current run rate</li>
+              <li>Required run rate</li>
+              <li>Overs</li>
+              <li>Wickets</li>
+              <li>Match status</li>
+            </ul>
+          </div>
+          <div class="feature-card">
+            <h4>Ball-by-Ball Scoring</h4>
+            <ul>
+              <li>Dot Ball</li>
+              <li>Single, Double, Triple</li>
+              <li>Four, Six</li>
+              <li>Wicket, Wide, No Ball</li>
+              <li>Bye, Leg Bye</li>
+            </ul>
+          </div>
+          <div class="feature-card">
+            <h4>Player Statistics</h4>
+            <ul>
+              <li>Runs</li>
+              <li>Balls</li>
+              <li>Strike Rate</li>
+              <li>Boundaries</li>
+              <li>Bowling Figures</li>
+              <li>Economy Rate</li>
+            </ul>
+          </div>
+          <div class="feature-card">
+            <h4>Match Summary</h4>
+            <ul>
+              <li>Winning Team</li>
+              <li>Player of the Match</li>
+              <li>Partnership Details</li>
+              <li>Fall of Wickets</li>
+              <li>Wagon Wheel (Future)</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-study-section reveal">
+        <h2>Prototype</h2>
+        <p>Created an interactive prototype in Figma demonstrating:</p>
+        <ul>
+          <li>Match creation flow</li>
+          <li>Ball-by-ball scoring interface</li>
+          <li>Live scoreboard updates</li>
+          <li>Match completion flow</li>
+        </ul>
+      </section>
+
+      <section class="case-study-section reveal">
+        <h2>Design Decisions</h2>
+        <h3>Large Scoring Buttons</h3>
+        <p>Enabled scorers to update scores quickly with fewer errors during live matches.</p>
+        <h3>Simplified Navigation</h3>
+        <p>Reduced the number of taps needed to access important features.</p>
+        <h3>High Contrast Layout</h3>
+        <p>Improved readability in bright outdoor conditions.</p>
+        <h3>Consistent Components</h3>
+        <p>Designed reusable buttons, cards, and input fields to maintain visual consistency.</p>
+      </section>
+
+      <section class="case-study-section reveal">
+        <h2>Challenges</h2>
+        <ul>
+          <li>Organizing large amounts of match data without overwhelming users</li>
+          <li>Designing a fast scoring interface suitable for real-time use</li>
+          <li>Balancing detailed statistics with a clean and simple layout</li>
+        </ul>
+      </section>
+
+      <section class="case-study-section reveal">
+        <h2>Outcome</h2>
+        <p>
+          The final design delivers a modern and intuitive cricket scoring experience by simplifying live score entry, improving information hierarchy, and making match statistics easier to understand. The interface is responsive, visually clean, and optimized for both scorers and spectators.
+        </p>
+      </section>
+
+      <section class="case-study-section reveal">
+        <h2>Key Learnings</h2>
+        <ul>
+          <li>Simplicity improves usability during time-sensitive tasks</li>
+          <li>Information hierarchy is essential for sports applications</li>
+          <li>Consistent design systems speed up UI development</li>
+          <li>User-centered design reduces friction and increases efficiency</li>
+          <li>Rapid prototyping helps identify usability issues early in the design process</li>
+        </ul>
+      </section>
+
+      <div class="case-study-nav reveal">
+        <a class="btn btn-primary" href="index.html#projects">Back to Projects</a>
+        <a class="btn btn-secondary" href="index.html">Home</a>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

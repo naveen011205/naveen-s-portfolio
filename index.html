@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Premium portfolio website for Naveen S, a UI/UX designer and front-end developer."
+    />
+    <title>Naveen S | UI/UX Designer & Front-End Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-loader" id="pageLoader">
+      <div class="loader-ring"></div>
+      <p>Preparing the experience</p>
+    </div>
+
+    <div class="cursor-glow" id="cursorGlow"></div>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="topbar">
+      <nav class="glass-nav" aria-label="Primary navigation">
+        <a class="brand" href="#home">Naveen S</a>
+        <div class="nav-links">
+          <a href="#home" class="active">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <a class="nav-cta" href="resume.html">Resume</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section id="home" class="hero section">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">UI/UX Designer & Front-End Developer</p>
+          <h1>Hi, I’m Naveen S</h1>
+          <p class="hero-text">
+            I design human-centered digital experiences that feel elegant, intuitive,
+            and beautifully crafted across web and mobile products.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">View Projects</a>
+            <a class="btn btn-secondary" href="resume.html">Download Resume</a>
+          </div>
+          <ul class="hero-highlights" aria-label="Highlights">
+            <li>Design systems</li>
+            <li>High-fidelity prototyping</li>
+            <li>Responsive front-end implementation</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual reveal" aria-hidden="true">
+          <div class="hero-card main-card">
+            <div class="mock-window">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="mock-ui">
+              <div class="mock-sidebar"></div>
+              <div class="mock-content">
+                <div class="mock-chart"></div>
+                <div class="mock-row"></div>
+                <div class="mock-row short"></div>
+              </div>
+            </div>
+          </div>
+          <div class="hero-card floating-card small-card"></div>
+          <div class="hero-card floating-card accent-card"></div>
+          <div class="orb orb-one"></div>
+          <div class="orb orb-two"></div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="section-heading reveal">
+          <p class="eyebrow">About</p>
+          <h2>Crafting thoughtful experiences with clarity and delight.</h2>
+        </div>
+        <div class="about-grid">
+          <article class="glass-panel about-card reveal">
+            <div class="about-copy">
+              <p>
+                I’m a multidisciplinary designer and developer focused on translating
+                complex ideas into seamless, elegant interfaces. My work blends user
+                research, interaction design, and modern front-end development to build
+                products that are both beautiful and functional.
+              </p>
+              <p>
+                I’m deeply passionate about user-centered design, accessibility, and
+                building consistent design systems that scale with product ambition.
+              </p>
+            </div>
+            <div class="profile-badge">
+              <div class="profile-image">
+                <span>NS</span>
+              </div>
+              <div class="profile-glow"></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills" class="section">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Skills</p>
+          <h2>Design thinking, product strategy, and polished implementation.</h2>
+        </div>
+        <div class="skills-grid">
+          <article class="glass-panel skill-card reveal">
+            <h3>Design</h3>
+            <ul>
+              <li>User Research</li>
+              <li>User Personas</li>
+              <li>User Flow</li>
+              <li>Wireframing</li>
+              <li>Prototyping</li>
+              <li>Design Systems</li>
+            </ul>
+          </article>
+          <article class="glass-panel skill-card reveal">
+            <h3>Tools</h3>
+            <ul>
+              <li>Figma</li>
+              <li>FigJam</li>
+              <li>Adobe XD</li>
+              <li>Photoshop</li>
+              <li>Illustrator</li>
+            </ul>
+          </article>
+          <article class="glass-panel skill-card reveal">
+            <h3>Development</h3>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Tailwind CSS</li>
+              <li>Git</li>
+              <li>GitHub</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Featured Projects</p>
+          <h2>Selected work blending strategy, craft, and product thinking.</h2>
+        </div>
+        <div class="projects-grid">
+          <article class="glass-panel project-card reveal">
+            <div class="project-visual cricket"></div>
+            <div class="project-body">
+              <h3>Cricket Scoring App</h3>
+              <p>
+                A fast, intuitive scoring experience for live matches that simplifies
+                complex updates into a calm and clear interface.
+              </p>
+              <ul>
+                <li>Problem: cluttered live scoring flows</li>
+                <li>Research: tournament workflow interviews</li>
+                <li>Outcome: streamlined scoring and seamless updates</li>
+              </ul>
+              <div class="project-actions">
+                <a class="btn btn-secondary" href="#contact">Prototype</a>
+                <a class="btn btn-primary" href="cricket-case-study.html">Case Study</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="glass-panel project-card reveal">
+            <div class="project-visual food"></div>
+            <div class="project-body">
+              <h3>Food Delivery App</h3>
+              <p>
+                An elegant ordering experience designed to reduce friction while making
+                discovery and checkout feel effortlessly premium.
+              </p>
+              <ul>
+                <li>Problem: low conversion in repetitive flows</li>
+                <li>Research: cart abandonment studies</li>
+                <li>Outcome: improved navigation and faster checkout</li>
+              </ul>
+              <div class="project-actions">
+                <a class="btn btn-secondary" href="#contact">Prototype</a>
+                <a class="btn btn-primary" href="food-delivery-case-study.html">Case Study</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="glass-panel project-card reveal">
+            <div class="project-visual college"></div>
+            <div class="project-body">
+              <h3>College Website</h3>
+              <p>
+                A polished digital front door for a college, balancing institutional
+                credibility with modern interaction design and clarity.
+              </p>
+              <ul>
+                <li>Problem: outdated and fragmented information</li>
+                <li>Research: student and faculty journeys</li>
+                <li>Outcome: stronger content hierarchy and engagement</li>
+              </ul>
+              <div class="project-actions">
+                <a class="btn btn-secondary" href="#contact">Prototype</a>
+                <a class="btn btn-primary" href="college-website-case-study.html">Case Study</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="experience" class="section">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Process</p>
+          <h2>The path from insight to polished product.</h2>
+        </div>
+        <div class="timeline reveal" aria-label="Design process timeline">
+          <div class="timeline-step">Research</div>
+          <div class="timeline-step">Define</div>
+          <div class="timeline-step">Ideate</div>
+          <div class="timeline-step">Wireframe</div>
+          <div class="timeline-step">Prototype</div>
+          <div class="timeline-step">Test</div>
+          <div class="timeline-step">Iterate</div>
+          <div class="timeline-step">Final Design</div>
+        </div>
+
+        <div class="achievements-grid">
+          <article class="glass-panel stat-card reveal">
+            <h3>Responsive Web & Mobile Designs</h3>
+            <p>Crafted across product and marketing experiences with flexible systems.</p>
+          </article>
+          <article class="glass-panel stat-card reveal">
+            <h3>Interactive Figma Prototypes</h3>
+            <p>High-fidelity flows designed for decision-making and stakeholder clarity.</p>
+          </article>
+          <article class="glass-panel stat-card reveal">
+            <h3>User Research & Usability Testing</h3>
+            <p>Grounded product decisions in real user needs and measurable feedback.</p>
+          </article>
+          <article class="glass-panel stat-card reveal">
+            <h3>Design Systems</h3>
+            <p>Reusable components and scalable patterns that keep products consistent.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="contact-panel glass-panel reveal">
+          <div class="contact-copy">
+            <p class="eyebrow">Contact</p>
+            <h2>Let’s build something memorable.</h2>
+            <p>
+              I’m available for freelance, product design, and front-end collaborations.
+            </p>
+            <ul class="contact-links">
+              <li><a href="mailto:hnaveen036@gmail.com">hnaveen036@gmail.com</a></li>
+              <li><a href="https://linkedin.com/in/s-naveen01" target="_blank" rel="noreferrer">LinkedIn</a></li>
+              <li><a href="https://github.com/naveen011205" target="_blank" rel="noreferrer">GitHub</a></li>
+              <li><a href="resume.html">Portfolio</a></li>
+            </ul>
+          </div>
+          <form class="contact-form" id="contactForm">
+            <label>
+              Name
+              <input type="text" name="user_name" placeholder="Your name" required />
+            </label>
+            <label>
+              Email
+              <input type="email" name="user_email" placeholder="you@example.com" required />
+            </label>
+            <label>
+              Message
+              <textarea name="message" rows="4" placeholder="Tell me about your idea" required></textarea>
+            </label>
+            <button class="btn btn-primary" type="submit">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer glass-panel">
+      <div class="footer-links">
+        <a href="https://linkedin.com/in/s-naveen01" target="_blank" rel="noreferrer">in</a>
+        <a href="https://github.com/naveen011205" target="_blank" rel="noreferrer">gh</a>
+        <a href="mailto:hnaveen036@gmail.com">mail</a>
+      </div>
+      <p>© 2026 Naveen S. Designed & developed with Liquid Glass-inspired clarity.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

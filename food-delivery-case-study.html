@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Food Delivery App UI/UX Case Study by Naveen S" />
+    <title>Food Delivery App Case Study | Naveen S</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .case-study-container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 2rem 1.25rem;
+      }
+
+      .case-study-header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+        margin-bottom: 2rem;
+        padding-bottom: 1.5rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+      }
+
+      .case-study-header h1 {
+        grid-column: 1 / -1;
+      }
+
+      .case-study-meta {
+        display: grid;
+        gap: 0.6rem;
+      }
+
+      .case-study-meta strong {
+        color: var(--text);
+      }
+
+      .case-study-meta p {
+        margin: 0;
+        color: var(--muted);
+      }
+
+      .case-study-section {
+        margin-bottom: 2rem;
+        padding-bottom: 1.5rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+      }
+
+      .case-study-section:last-child {
+        border-bottom: none;
+      }
+
+      .case-study-section h2 {
+        margin-top: 0;
+      }
+
+      .case-study-section ul {
+        padding-left: 1.2rem;
+      }
+
+      .case-study-section li {
+        margin-bottom: 0.6rem;
+        color: var(--muted);
+        line-height: 1.7;
+      }
+
+      .flow-chart {
+        background: rgba(255, 255, 255, 0.18);
+        padding: 1rem;
+        border-radius: 16px;
+        margin: 1rem 0;
+        font-weight: 600;
+        text-align: center;
+        color: var(--text);
+        border: 1px solid rgba(255, 255, 255, 0.4);
+      }
+
+      .color-palette {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 1rem;
+        margin: 1rem 0;
+      }
+
+      .color-swatch {
+        border-radius: 12px;
+        padding: 1rem;
+        text-align: center;
+        border: 1px solid rgba(255, 255, 255, 0.4);
+      }
+
+      .color-orange {
+        background: #f97316;
+        color: white;
+      }
+
+      .color-white {
+        background: white;
+        color: var(--text);
+      }
+
+      .color-green {
+        background: #22c55e;
+        color: white;
+      }
+
+      .color-gray {
+        background: #f8fafc;
+        color: var(--text);
+      }
+
+      .feature-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        margin: 1rem 0;
+      }
+
+      .feature-card {
+        background: rgba(255, 255, 255, 0.18);
+        padding: 1rem;
+        border-radius: 12px;
+        border: 1px solid rgba(255, 255, 255, 0.4);
+      }
+
+      .feature-card h4 {
+        margin-top: 0;
+        color: var(--text);
+      }
+
+      .feature-card ul {
+        padding-left: 1rem;
+        margin: 0;
+      }
+
+      .feature-card li {
+        margin-bottom: 0.4rem;
+      }
+
+      .case-study-nav {
+        display: flex;
+        gap: 1rem;
+        margin-top: 2rem;
+        flex-wrap: wrap;
+      }
+
+      @media (max-width: 720px) {
+        .case-study-header {
+          grid-template-columns: 1fr;
+        }
+
+        .color-palette {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .feature-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page-loader" id="pageLoader">
+      <div class="loader-ring"></div>
+      <p>Loading case study</p>
+    </div>
+
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <main id="main" class="case-study-container">
+      <div class="case-study-header reveal">
+        <h1>Food Delivery App</h1>
+        <div class="case-study-meta">
+          <p><strong>Role:</strong> UI/UX Designer</p>
+          <p><strong>Duration:</strong> 3 Weeks</p>
+        </div>
+        <div class="case-study-meta">
+          <p><strong>Tools:</strong> Figma, FigJam</p>
+          <p><strong>Platform:</strong> Mobile & Web</p>
+        </div>
+      </div>
+
+      <section class="case-study-section reveal">
+        <h2>Problem Statement</h2>
+        <p>
+          Ordering food online should be quick and convenient, but many food delivery apps have cluttered interfaces, lengthy checkout processes, and poor navigation. Users often struggle to discover restaurants, compare menu items, track orders, and complete payments efficiently.
+        </p>
+        <p>
+          The objective was to design a modern, intuitive, and user-friendly food delivery application that simplifies the entire ordering journey—from discovering restaurants to tracking deliveries in real time.
+        </p>
+      </section>
+
+      <section class="case-study-section reveal">
+        <h2>Project Goal</h2>
+        <p>Design a seamless food delivery experience that enables users to:</p>
+        <ul>
+          <li>Browse nearby restaurants</li>
+          <li>Search and filter meals</li>
+          <li>Place orders with minimal steps</li>
+          <li>Track deliveries in real time</li>
+          <li>Save favorite restaurants and dishes</li>
+          <li>Complete secure online payments</li>
+        </ul>
+      </section>
+
+      <section class="case-study-section reveal">
+        <h2>Target Users</h2>
+        <h3>Primary Users</h3>
+        <ul>
+          <li>Students</li>
+          <li>Working professionals</li>
+          <li>Families</li>
+        </ul>
+        <h3>Secondary Users</h3>
+        <ul>
+          <li>Restaurant owners</li>
+          <li>Delivery partners</li>
+        </ul>
+      </section>
+
+      <section class="case-study-section reveal">
+        <h2>User Research</h2>
+        <p>Research included analyzing existing food delivery platforms and gathering feedback from frequent online food ordering users.</p>
+        <h3>Key Findings</h3>
+        <ul>
+          <li>Users wanted faster checkout</li>
+          <li>Restaurant filtering was often confusing</li>
+          <li>Menu pages felt overcrowded</li>
+          <li>Order tracking lacked clarity</li>
+          <li>Repeat ordering should require fewer steps</li>
+        </ul>
+      </section>
+
+      <section class="case-study-section reveal">
+        <h2>User Persona</h2>
+        <h3>Arjun – Busy Software Engineer</h3>
+        <p><strong>Age:</strong> 26</p>
+        <p><strong>Occupation:</strong> Software Engineer</p>
+        <h4>Goals</h4>
+        <ul>
+          <li>Order food quickly after work</li>
+          <li>Save favorite meals</li>
+          <li>Track deliveries accurately</li>
+        </ul>
+        <h4>Pain Points</h4>
+        <ul>
+          <li>Long checkout process</li>
+          <li>Difficult restaurant discovery</li>
+          <li>Slow navigation</li>
+        </ul>
+      </section>
+
+      <section class="case-study-section reveal">
+        <h2>Design Process</h2>
+        <ol style="padding-left: 1.2rem; color: var(--muted); line-height: 1.8;">
+          <li>User Research</li>
+          <li>Competitor Analysis</li>
+          <li>User Flow</li>
+          <li>Wireframing</li>
+          <li>High-Fidelity UI Design</li>
+          <li>Interactive Prototype</li>
+          <li>Usability Testing</li>
+        </ol>
+      </section>
+
+      <section class="case-study-section reveal">
+        <h2>User Flow</h2>
+        <div class="flow-chart">Open App</div>
+        <div class="flow-chart">↓ Browse Restaurants</div>
+        <div class="flow-chart">↓ Search Food</div>
+        <div class="flow-chart">↓ View Menu</div>
+        <div class="flow-chart">↓ Add to Cart</div>
+        <div class="flow-chart">↓ Checkout</div>
+        <div class="flow-chart">↓ Payment</div>
+        <div class="flow-chart">↓ Track Order</div>
+        <div class="flow-chart">↓ Order Delivered</div>
+      </section>
+
+      <section class="case-study-section reveal">
+        <h2>Wireframes</h2>
+        <p>Low-fidelity wireframes focused on:</p>
+        <ul>
+          <li>Simple restaurant browsing</li>
+          <li>Easy menu navigation</li>
+          <li>Fast checkout</li>
+          <li>Clear order tracking</li>
+          <li>Minimal user effort</li>
+        </ul>
+      </section>
+
+      <section class="case-study-section reveal">
+        <h2>Visual Design</h2>
+        <h3>Color Palette</h3>
+        <div class="color-palette">
+          <div class="color-swatch color-orange">
+            <strong>Primary</strong><br />
+            #F97316
+          </div>
+          <div class="color-swatch color-white">
+            <strong>Secondary</strong><br />
+            #FFFFFF
+          </div>
+          <div class="color-swatch color-green">
+            <strong>Accent</strong><br />
+            #22C55E
+          </div>
+          <div class="color-swatch color-gray">
+            <strong>Background</strong><br />
+            #F8FAFC
+          </div>
+        </div>
+        <h3>Typography</h3>
+        <p><strong>Headings:</strong> Poppins</p>
+        <p><strong>Body:</strong> Inter</p>
+      </section>
+
+      <section class="case-study-section reveal">
+        <h2>Key Features</h2>
+        <div class="feature-grid">
+          <div class="feature-card">
+            <h4>Restaurant Discovery</h4>
+            <ul>
+              <li>Search restaurants</li>
+              <li>Category filters</li>
+              <li>Ratings</li>
+              <li>Delivery time</li>
+            </ul>
+          </div>
+          <div class="feature-card">
+            <h4>Food Menu</h4>
+            <ul>
+              <li>Dish images</li>
+              <li>Price</li>
+              <li>Ingredients</li>
+              <li>Customization options</li>
+            </ul>
+          </div>
+          <div class="feature-card">
+            <h4>Cart & Checkout</h4>
+            <ul>
+              <li>Quantity updates</li>
+              <li>Promo codes</li>
+              <li>Multiple payment methods</li>
+              <li>Delivery address management</li>
+            </ul>
+          </div>
+          <div class="feature-card">
+            <h4>Live Order Tracking</h4>
+            <ul>
+              <li>Real-time delivery updates</li>
+              <li>Estimated arrival time</li>
+              <li>Delivery partner information</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-study-section reveal">
+        <h2>Design Decisions</h2>
+        <ul>
+          <li>Reduced checkout steps to improve speed</li>
+          <li>Used large food images for easier browsing</li>
+          <li>Simplified navigation with a bottom navigation bar</li>
+          <li>Maintained consistent spacing and reusable UI components</li>
+        </ul>
+      </section>
+
+      <section class="case-study-section reveal">
+        <h2>Challenges</h2>
+        <ul>
+          <li>Organizing large restaurant menus</li>
+          <li>Making search and filters intuitive</li>
+          <li>Designing a quick yet secure checkout experience</li>
+        </ul>
+      </section>
+
+      <section class="case-study-section reveal">
+        <h2>Outcome</h2>
+        <p>
+          The final design provides a clean and engaging food ordering experience with simplified navigation, faster checkout, and real-time order tracking. The interface helps users discover restaurants easily and complete orders with minimal effort.
+        </p>
+      </section>
+
+      <section class="case-study-section reveal">
+        <h2>Key Learnings</h2>
+        <ul>
+          <li>Simple navigation improves task completion</li>
+          <li>Visual hierarchy enhances food discovery</li>
+          <li>Streamlined checkout increases usability</li>
+          <li>Consistent design systems improve scalability</li>
+        </ul>
+      </section>
+
+      <div class="case-study-nav reveal">
+        <a class="btn btn-primary" href="index.html#projects">Back to Projects</a>
+        <a class="btn btn-secondary" href="index.html">Home</a>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
